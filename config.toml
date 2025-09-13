@@ -29,6 +29,11 @@ theme = 'ananke'
   show_post_word_count = true
   show_author = true
   show_comments = false
+  
+  # Use LibSass for better compatibility with Ananke theme
+  [params.main]
+    [params.main.build]
+      transpiler = "libsass"
 
 # Menu configuration
 [[menu.main]]

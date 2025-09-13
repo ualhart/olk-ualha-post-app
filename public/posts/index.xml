@@ -1,33 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on My Hugo Blog</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on My Hugo Blog</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jan 2024 09:15:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hugo Themes and Customization</title>
-      <link>http://localhost:1313/posts/hugo-themes/</link>
-      <pubDate>Thu, 25 Jan 2024 09:15:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/hugo-themes/</guid>
-      <description>&lt;h1 id=&#34;hugo-themes-and-customization&#34;&gt;Hugo Themes and Customization&lt;/h1&gt;&#xA;&lt;p&gt;One of Hugo&amp;rsquo;s greatest strengths is its extensive theme ecosystem. With hundreds of themes available, you can find one that perfectly matches your vision.&lt;/p&gt;&#xA;&lt;h2 id=&#34;popular-hugo-themes&#34;&gt;Popular Hugo Themes&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ananke&#34;&gt;Ananke&lt;/h3&gt;&#xA;&lt;p&gt;A clean, minimal theme perfect for blogs and portfolios. Features include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Responsive design&lt;/li&gt;&#xA;&lt;li&gt;Social media integration&lt;/li&gt;&#xA;&lt;li&gt;SEO optimization&lt;/li&gt;&#xA;&lt;li&gt;Dark mode support&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;papermod&#34;&gt;PaperMod&lt;/h3&gt;&#xA;&lt;p&gt;A fast, clean, and responsive theme with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Minimal design&lt;/li&gt;&#xA;&lt;li&gt;Search functionality&lt;/li&gt;&#xA;&lt;li&gt;Reading time estimates&lt;/li&gt;&#xA;&lt;li&gt;Table of contents&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;academic&#34;&gt;Academic&lt;/h3&gt;&#xA;&lt;p&gt;Perfect for academic and research websites with:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Creating Content in Hugo</title>
-      <link>http://localhost:1313/posts/creating-content/</link>
-      <pubDate>Sat, 20 Jan 2024 14:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/creating-content/</guid>
-      <description>&lt;h1 id=&#34;creating-content-in-hugo&#34;&gt;Creating Content in Hugo&lt;/h1&gt;&#xA;&lt;p&gt;Hugo makes it incredibly easy to create and manage content. All content is written in Markdown, making it simple and portable.&lt;/p&gt;&#xA;&lt;h2 id=&#34;content-structure&#34;&gt;Content Structure&lt;/h2&gt;&#xA;&lt;p&gt;Hugo organizes content in the &lt;code&gt;content/&lt;/code&gt; directory. You can create any structure you want:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;content/&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── posts/&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── my-first-post.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── another-post.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── pages/&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── about.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── _index.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;h2 id=&#34;front-matter&#34;&gt;Front Matter&lt;/h2&gt;&#xA;&lt;p&gt;Every content file starts with front matter, which contains metadata about the content:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Welcome to Hugo</title>
-      <link>http://localhost:1313/posts/welcome-to-hugo/</link>
-      <pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/welcome-to-hugo/</guid>
-      <description>&lt;h1 id=&#34;welcome-to-hugo&#34;&gt;Welcome to Hugo!&lt;/h1&gt;&#xA;&lt;p&gt;Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-hugo&#34;&gt;Why Hugo?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Speed&lt;/strong&gt;: Hugo is the fastest static site generator available&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Flexibility&lt;/strong&gt;: Built with Go, Hugo is incredibly flexible and extensible&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Simplicity&lt;/strong&gt;: Easy to learn and use&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Community&lt;/strong&gt;: Large, active community with many themes and resources&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;&#xA;&lt;p&gt;To create a new Hugo site, simply run:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on My Hugo Blog</title><link>https://ualha.com/posts/</link><description>Recent content in Posts on My Hugo Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 25 Jan 2024 09:15:00 +0000</lastBuildDate><atom:link href="https://ualha.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Themes and Customization</title><link>https://ualha.com/posts/hugo-themes/</link><pubDate>Thu, 25 Jan 2024 09:15:00 +0000</pubDate><guid>https://ualha.com/posts/hugo-themes/</guid><description>&lt;h1 id="hugo-themes-and-customization">Hugo Themes and Customization&lt;/h1>
+&lt;p>One of Hugo&amp;rsquo;s greatest strengths is its extensive theme ecosystem. With hundreds of themes available, you can find one that perfectly matches your vision.&lt;/p>
+&lt;h2 id="popular-hugo-themes">Popular Hugo Themes&lt;/h2>
+&lt;h3 id="ananke">Ananke&lt;/h3>
+&lt;p>A clean, minimal theme perfect for blogs and portfolios. Features include:&lt;/p>
+&lt;ul>
+&lt;li>Responsive design&lt;/li>
+&lt;li>Social media integration&lt;/li>
+&lt;li>SEO optimization&lt;/li>
+&lt;li>Dark mode support&lt;/li>
+&lt;/ul>
+&lt;h3 id="papermod">PaperMod&lt;/h3>
+&lt;p>A fast, clean, and responsive theme with:&lt;/p>
+&lt;ul>
+&lt;li>Minimal design&lt;/li>
+&lt;li>Search functionality&lt;/li>
+&lt;li>Reading time estimates&lt;/li>
+&lt;li>Table of contents&lt;/li>
+&lt;/ul>
+&lt;h3 id="academic">Academic&lt;/h3>
+&lt;p>Perfect for academic and research websites with:&lt;/p></description></item><item><title>Creating Content in Hugo</title><link>https://ualha.com/posts/creating-content/</link><pubDate>Sat, 20 Jan 2024 14:30:00 +0000</pubDate><guid>https://ualha.com/posts/creating-content/</guid><description>&lt;h1 id="creating-content-in-hugo">Creating Content in Hugo&lt;/h1>
+&lt;p>Hugo makes it incredibly easy to create and manage content. All content is written in Markdown, making it simple and portable.&lt;/p>
+&lt;h2 id="content-structure">Content Structure&lt;/h2>
+&lt;p>Hugo organizes content in the &lt;code>content/&lt;/code> directory. You can create any structure you want:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">content/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── posts/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ ├── my-first-post.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ └── another-post.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── pages/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ └── about.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└── _index.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="front-matter">Front Matter&lt;/h2>
+&lt;p>Every content file starts with front matter, which contains metadata about the content:&lt;/p></description></item><item><title>Welcome to Hugo</title><link>https://ualha.com/posts/welcome-to-hugo/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://ualha.com/posts/welcome-to-hugo/</guid><description>&lt;h1 id="welcome-to-hugo">Welcome to Hugo!&lt;/h1>
+&lt;p>Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.&lt;/p>
+&lt;h2 id="why-hugo">Why Hugo?&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Speed&lt;/strong>: Hugo is the fastest static site generator available&lt;/li>
+&lt;li>&lt;strong>Flexibility&lt;/strong>: Built with Go, Hugo is incredibly flexible and extensible&lt;/li>
+&lt;li>&lt;strong>Simplicity&lt;/strong>: Easy to learn and use&lt;/li>
+&lt;li>&lt;strong>Community&lt;/strong>: Large, active community with many themes and resources&lt;/li>
+&lt;/ul>
+&lt;h2 id="getting-started">Getting Started&lt;/h2>
+&lt;p>To create a new Hugo site, simply run:&lt;/p></description></item></channel></rss>
