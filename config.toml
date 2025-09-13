@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://ualha.com/'
 languageCode = 'en-us'
 title = 'My Hugo Blog'
 theme = 'ananke'
@@ -20,7 +20,7 @@ theme = 'ananke'
   keywords = ["blog", "hugo", "static site"]
   
   # Social links
-  github = "https://github.com/yourusername"
+  github = "https://github.com/ualha"
   twitter = "https://twitter.com/yourusername"
   linkedin = "https://linkedin.com/in/yourusername"
   
