@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on My Hugo Blog</title>
+    <link>http://localhost:1313/categories/design/</link>
+    <description>Recent content in Design on My Hugo Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Jan 2024 09:15:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Themes and Customization</title>
+      <link>http://localhost:1313/posts/hugo-themes/</link>
+      <pubDate>Thu, 25 Jan 2024 09:15:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hugo-themes/</guid>
+      <description>&lt;h1 id=&#34;hugo-themes-and-customization&#34;&gt;Hugo Themes and Customization&lt;/h1&gt;&#xA;&lt;p&gt;One of Hugo&amp;rsquo;s greatest strengths is its extensive theme ecosystem. With hundreds of themes available, you can find one that perfectly matches your vision.&lt;/p&gt;&#xA;&lt;h2 id=&#34;popular-hugo-themes&#34;&gt;Popular Hugo Themes&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ananke&#34;&gt;Ananke&lt;/h3&gt;&#xA;&lt;p&gt;A clean, minimal theme perfect for blogs and portfolios. Features include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Responsive design&lt;/li&gt;&#xA;&lt;li&gt;Social media integration&lt;/li&gt;&#xA;&lt;li&gt;SEO optimization&lt;/li&gt;&#xA;&lt;li&gt;Dark mode support&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;papermod&#34;&gt;PaperMod&lt;/h3&gt;&#xA;&lt;p&gt;A fast, clean, and responsive theme with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Minimal design&lt;/li&gt;&#xA;&lt;li&gt;Search functionality&lt;/li&gt;&#xA;&lt;li&gt;Reading time estimates&lt;/li&gt;&#xA;&lt;li&gt;Table of contents&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;academic&#34;&gt;Academic&lt;/h3&gt;&#xA;&lt;p&gt;Perfect for academic and research websites with:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

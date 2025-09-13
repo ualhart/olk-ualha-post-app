@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Static-Site on My Hugo Blog</title>
+    <link>http://localhost:1313/tags/static-site/</link>
+    <description>Recent content in Static-Site on My Hugo Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jan 2024 10:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/static-site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to Hugo</title>
+      <link>http://localhost:1313/posts/welcome-to-hugo/</link>
+      <pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/welcome-to-hugo/</guid>
+      <description>&lt;h1 id=&#34;welcome-to-hugo&#34;&gt;Welcome to Hugo!&lt;/h1&gt;&#xA;&lt;p&gt;Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-hugo&#34;&gt;Why Hugo?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Speed&lt;/strong&gt;: Hugo is the fastest static site generator available&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Flexibility&lt;/strong&gt;: Built with Go, Hugo is incredibly flexible and extensible&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Simplicity&lt;/strong&gt;: Easy to learn and use&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Community&lt;/strong&gt;: Large, active community with many themes and resources&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;&#xA;&lt;p&gt;To create a new Hugo site, simply run:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

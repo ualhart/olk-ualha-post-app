@@ -1,0 +1,51 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My Hugo Blog'
+theme = 'ananke'
+
+# Enable syntax highlighting
+[markup]
+  [markup.highlight]
+    style = 'github'
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+
+# Site parameters
+[params]
+  author = "Your Name"
+  description = "A simple Hugo blog"
+  keywords = ["blog", "hugo", "static site"]
+  
+  # Social links
+  github = "https://github.com/yourusername"
+  twitter = "https://twitter.com/yourusername"
+  linkedin = "https://linkedin.com/in/yourusername"
+  
+  # Theme specific
+  show_reading_time = true
+  show_post_word_count = true
+  show_author = true
+  show_comments = false
+
+# Menu configuration
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 3
+
+# Build configuration
+[build]
+  writeStats = true
