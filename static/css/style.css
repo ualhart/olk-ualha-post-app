@@ -475,3 +475,156 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+/* Estilos para páginas de sección */
+.post-list-section,
+.contact-section,
+.post-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: calc(100vh - 200px);
+}
+
+.post-list-section h1,
+.contact-section h1,
+.post-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.post-list-content,
+.contact-content,
+.post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+.post-list-content h2,
+.contact-content h2,
+.post-content h2 {
+    color: var(--text-primary);
+    font-size: 2rem;
+    margin: 2rem 0 1rem 0;
+}
+
+.post-list-content h3,
+.contact-content h3,
+.post-content h3 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.post-list-content ul,
+.contact-content ul,
+.post-content ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.post-list-content li,
+.contact-content li,
+.post-content li {
+    margin: 0.5rem 0;
+}
+
+.post-list-content a,
+.contact-content a,
+.post-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post-list-content a:hover,
+.contact-content a:hover,
+.post-content a:hover {
+    color: var(--primary-hover);
+}
+
+/* Grid de proyectos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: var(--surface-color);
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.project-card h3 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-card h3 a:hover {
+    color: var(--primary-color);
+}
+
+.project-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.project-date {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Responsive para páginas de sección */
+@media (max-width: 768px) {
+    .post-list-section,
+    .contact-section,
+    .post-section {
+        padding: 1rem;
+    }
+    
+    .post-list-section h1,
+    .contact-section h1,
+    .post-section h1 {
+        font-size: 2rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .project-card {
+        padding: 1.5rem;
+    }
+}
