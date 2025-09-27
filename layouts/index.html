@@ -1,10 +1,36 @@
 {{ define "main" }}
 <section class="home-section">
-    <h1>{{ .Site.Title }}</h1>
-    <p class="subtitle">Desarrollador y creador de contenido</p>
-    
-    <div class="home-content">
-        {{ .Content }}
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-info">
+                <h1 class="profile-title">{{ .Site.Title }}</h1>
+                <p class="profile-subtitle">Desarrollador y creador de contenido</p>
+                <div class="social-links">
+                    <a href="https://github.com/ualha" target="_blank" class="social-link">
+                        <span class="social-icon">🐙</span>
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/ualha" target="_blank" class="social-link">
+                        <span class="social-icon">💼</span>
+                        LinkedIn
+                    </a>
+                    <a href="https://twitter.com/ualha_dev" target="_blank" class="social-link">
+                        <span class="social-icon">🐦</span>
+                        Twitter
+                    </a>
+                </div>
+            </div>
+            <div class="profile-image-container">
+                <img src="/images/profile.jpg" alt="{{ .Site.Title }}" class="profile-image">
+                <div class="profile-badge">
+                    <span class="badge-text">Disponible</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-content">
+            {{ .Content }}
+        </div>
     </div>
 </section>
 {{ end }}

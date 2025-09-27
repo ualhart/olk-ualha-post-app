@@ -4,26 +4,27 @@ date: 2024-01-01
 draft: false
 ---
 
-## ¡Hola! Soy Ualha 👋
+## Sobre mí
 
-Soy un desarrollador apasionado por la tecnología y la creación de contenido digital. Me especializo en desarrollo web, aplicaciones móviles y diseño de experiencias de usuario.
+Soy un desarrollador full-stack con más de 5 años de experiencia creando soluciones digitales innovadoras. Mi pasión es transformar ideas complejas en experiencias digitales elegantes y funcionales.
 
-### ¿Qué hago?
+### Especialidades
 
-- **Desarrollo Web**: Creo sitios web modernos y responsivos usando las últimas tecnologías
-- **Aplicaciones Móviles**: Desarrollo apps nativas e híbridas para iOS y Android
-- **Diseño UX/UI**: Me enfoco en crear experiencias intuitivas y atractivas
-- **Contenido Digital**: Produzco contenido técnico y tutoriales
+- **Frontend**: React, Vue.js, Angular, TypeScript
+- **Backend**: Node.js, Python, PHP, Go
+- **Mobile**: React Native, Flutter, Swift
+- **Cloud**: AWS, Docker, Kubernetes
+- **Design**: UX/UI, Figma, Adobe Creative Suite
 
-### Mis intereses
+### Proyectos destacados
 
-Me apasiona aprender nuevas tecnologías, compartir conocimiento y crear proyectos que impacten positivamente en la vida de las personas. Siempre estoy explorando nuevas formas de combinar tecnología y creatividad.
+He trabajado en más de 50 proyectos exitosos, desde startups hasta empresas Fortune 500. Mi enfoque siempre está en la calidad del código, la experiencia del usuario y la escalabilidad de las soluciones.
 
-### Conecta conmigo
+### Filosofía de trabajo
 
-No dudes en explorar mi galería de proyectos y contactarme si tienes alguna pregunta o idea en la que podamos colaborar.
+Creo en el desarrollo ágil, la colaboración estrecha con los clientes y la entrega de valor continuo. Cada proyecto es una oportunidad de aprender y crecer.
 
 ---
 
-*"La tecnología es mejor cuando acerca a las personas"* - Steve Jobs
+*"La mejor manera de predecir el futuro es creándolo"* - Peter Drucker
 

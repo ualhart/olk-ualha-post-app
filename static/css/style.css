@@ -179,35 +179,181 @@ body {
 }
 
 /* Sección Home */
+/* Sección Home - Diseño de Perfil */
 .home-section {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    padding: 2rem;
+    min-height: calc(100vh - 200px);
 }
 
-.home-section h1 {
-    font-size: 3rem;
+.profile-container {
+    background: var(--surface-color);
+    border-radius: 20px;
+    padding: 3rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-title {
+    font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--primary-color), #ff6b6b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.home-section .subtitle {
-    font-size: 1.25rem;
+.profile-subtitle {
+    font-size: 1.5rem;
     color: var(--text-secondary);
     margin-bottom: 2rem;
+    font-weight: 300;
 }
 
-.home-content {
-    background: var(--surface-color);
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
-    text-align: left;
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(145, 70, 255, 0.1);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 25px;
+    border: 1px solid var(--primary-color);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.social-link:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.social-icon {
+    font-size: 1.2rem;
+}
+
+.profile-image-container {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
     box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.profile-badge {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+    animation: pulse 2s infinite;
+}
+
+.badge-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.badge-text::before {
+    content: "●";
+    color: #10b981;
+    font-size: 1.2rem;
+}
+
+.profile-content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.profile-content h2 {
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem 0;
+    font-weight: 600;
+}
+
+.profile-content h3 {
+    color: var(--text-primary);
+    font-size: 2rem;
+    margin: 1.5rem 0 0.5rem 0;
+    font-weight: 500;
+}
+
+.profile-content ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.profile-content li {
+    margin: 0.5rem 0;
+    font-weight: 400;
+}
+
+.profile-content strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.profile-content em {
+    color: var(--text-primary);
+    font-style: italic;
+    font-size: 1.1rem;
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(145, 70, 255, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 /* Galería de imágenes */
@@ -477,8 +623,39 @@ body {
         padding: 0 0.5rem;
     }
     
-    .home-section h1 {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .profile-title {
+        font-size: 2.5rem;
+    }
+    
+    .profile-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .profile-container {
+        padding: 2rem;
+    }
+    
+    .profile-content h2 {
         font-size: 2rem;
+    }
+    
+    .profile-content h3 {
+        font-size: 1.5rem;
     }
 }
 
