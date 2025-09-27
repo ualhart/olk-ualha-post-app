@@ -6,13 +6,20 @@
         {{ .Content }}
     </div>
     
-    <div class="projects-grid">
+    <div class="instagram-gallery">
         {{ range .Pages }}
-        <div class="project-card">
-            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-            <p>{{ .Summary }}</p>
-            <div class="project-meta">
-                <span class="project-date">{{ .Date.Format "2 Jan 2006" }}</span>
+        <div class="gallery-item" 
+             data-image="{{ .Params.image }}" 
+             data-title="{{ .Title }}" 
+             data-date="{{ .Date.Format "2 Jan 2006" }}" 
+             data-description="{{ .Summary }}"
+             onclick="openModal(this)">
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy">
+            <div class="gallery-overlay">
+                <div class="gallery-info">
+                    <h3>{{ .Title }}</h3>
+                    <p>{{ .Date.Format "2 Jan 2006" }}</p>
+                </div>
             </div>
         </div>
         {{ end }}

@@ -271,19 +271,21 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
 }
 
 .modal-content {
     position: relative;
-    margin: 5% auto;
+    margin: 2% auto;
     width: 90%;
-    max-width: 1000px;
+    max-width: 900px;
     background: var(--surface-color);
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid var(--border-color);
+    display: flex;
+    min-height: 600px;
 }
 
 .close {
@@ -295,48 +297,63 @@ body {
     font-weight: bold;
     cursor: pointer;
     z-index: 2001;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .close:hover {
     color: var(--primary-color);
+    background: rgba(145, 70, 255, 0.2);
 }
 
 .modal-body {
     display: flex;
-    min-height: 500px;
-    max-height: 80vh;
+    width: 100%;
+    min-height: 600px;
 }
 
 .modal-body img {
     width: 60%;
-    height: 500px;
+    height: 600px;
     object-fit: cover;
-    border-radius: 0 0 0 12px;
+    border-radius: 0;
 }
 
 .modal-info {
     width: 40%;
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(135deg, var(--surface-color) 0%, rgba(145, 70, 255, 0.05) 100%);
+    background: var(--background-color);
 }
 
 .modal-info h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
     color: var(--text-primary);
+    margin-bottom: 1rem;
     line-height: 1.2;
 }
 
 .modal-info p {
+    font-size: 1rem;
     color: var(--text-secondary);
-    line-height: 1.7;
-    font-size: 1.1rem;
-    margin: 0;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.modal-date {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
 
 /* Sección Gallery */
@@ -427,6 +444,12 @@ body {
         gap: 1rem;
     }
     
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+        min-height: auto;
+    }
+    
     .modal-body {
         flex-direction: column;
         min-height: auto;
@@ -444,8 +467,14 @@ body {
     }
     
     .modal-info h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
+    }
+    
+    .instagram-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 0.5rem;
+        padding: 0 0.5rem;
     }
     
     .home-section h1 {
@@ -548,61 +577,74 @@ html {
     color: var(--primary-hover);
 }
 
-/* Grid de proyectos */
-.projects-grid {
+/* Galería estilo Instagram */
+.instagram-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
     margin-top: 2rem;
+    padding: 0 1rem;
 }
 
-.project-card {
-    background: var(--surface-color);
-    border-radius: 12px;
-    padding: 2rem;
-    border: 1px solid var(--border-color);
+.gallery-item {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
     transition: all 0.3s ease;
+    background: var(--surface-color);
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+.gallery-item:hover {
+    transform: scale(1.02);
     box-shadow: var(--shadow-lg);
-    border-color: var(--primary-color);
 }
 
-.project-card h3 {
-    color: var(--text-primary);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.project-card h3 a {
-    color: var(--text-primary);
-    text-decoration: none;
-    transition: color 0.3s ease;
+.gallery-item:hover img {
+    transform: scale(1.1);
 }
 
-.project-card h3 a:hover {
-    color: var(--primary-color);
-}
-
-.project-card p {
-    color: var(--text-secondary);
-    margin-bottom: 1rem;
-    line-height: 1.6;
-}
-
-.project-meta {
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(145, 70, 255, 0.8), rgba(124, 58, 237, 0.8));
+    opacity: 0;
+    transition: opacity 0.3s ease;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
+    justify-content: center;
 }
 
-.project-date {
-    color: var(--primary-color);
-    font-weight: 500;
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-info {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.gallery-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-info p {
+    font-size: 0.9rem;
+    opacity: 0.9;
 }
 
 /* Responsive para páginas de sección */

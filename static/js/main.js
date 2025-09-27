@@ -1,4 +1,4 @@
-// Modal functionality
+// Modal functionality for Instagram-style gallery
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImage');
@@ -6,10 +6,30 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalDescription = document.getElementById('modalDescription');
     const closeBtn = document.querySelector('.close');
 
+    // Function to open modal with gallery item data
+    window.openModal = function(element) {
+        const image = element.getAttribute('data-image');
+        const title = element.getAttribute('data-title');
+        const date = element.getAttribute('data-date');
+        const description = element.getAttribute('data-description');
+
+        modalImg.src = image;
+        modalImg.alt = title;
+        modalTitle.textContent = title;
+        modalDescription.innerHTML = `
+            <div class="modal-date">${date}</div>
+            <p>${description}</p>
+        `;
+
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    };
+
     // Close modal when clicking the X
     if (closeBtn) {
         closeBtn.onclick = function() {
             modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
         }
     }
 
@@ -17,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
         }
     }
 
@@ -24,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('keydown', function(event) {
         if (event.key === 'Escape' && modal.style.display === 'block') {
             modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
         }
     });
 });
