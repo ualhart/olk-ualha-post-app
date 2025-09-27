@@ -1,1 +1,10 @@
+baseURL = 'https://ualha.github.io/olk-ualha-post-app/'
 title = 'Ualha'
+languageCode = 'es'
+defaultContentLanguage = 'es'
+
+[params]
+  description = "Desarrollador y creador de contenido"
+
+[build]
+  publishDir = 'public'

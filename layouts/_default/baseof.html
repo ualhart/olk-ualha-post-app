@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="floating-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+            </div>
+            <div class="nav-menu">
+                <a href="{{ "/" | relURL }}" class="nav-link {{ if .IsHome }}active{{ end }}">
+                    <span class="nav-icon">🏠</span>
+                    Home
+                </a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle {{ if eq .Section "post" }}active{{ end }}">
+                        <span class="nav-icon">📸</span>
+                        Post
+                        <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="{{ "post/" | relURL }}" class="dropdown-item {{ if eq .Section "post" }}active{{ end }}">
+                            <span class="nav-icon">🖼️</span>
+                            Images
+                        </a>
+                    </div>
+                </div>
+                <a href="{{ "contact/" | relURL }}" class="nav-link {{ if eq .Section "contact" }}active{{ end }}">
+                    <span class="nav-icon">📧</span>
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="">
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ "js/main.js" | relURL }}"></script>
+</body>
+</html>
