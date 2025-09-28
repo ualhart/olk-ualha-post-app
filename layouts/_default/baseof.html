@@ -14,6 +14,14 @@
             <div class="nav-brand">
                 <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
             </div>
+            
+            <!-- Hamburger menu button for mobile -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
             <div class="nav-menu">
                 <a href="{{ "/" | relURL }}" class="nav-link {{ if .IsHome }}active{{ end }}">
                     <span class="nav-icon">🏠</span>
