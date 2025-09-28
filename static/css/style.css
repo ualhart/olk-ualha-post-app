@@ -107,6 +107,41 @@ body {
     font-size: 1.2rem;
 }
 
+/* Mobile menu toggle button */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-primary);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
 /* Dropdown Menu */
 .nav-dropdown {
     position: relative;
@@ -553,32 +588,87 @@ body {
         padding: 0 1rem;
     }
     
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
     .nav-menu {
-        gap: 1rem;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(15, 15, 35, 0.98);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid var(--border-color);
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
     }
     
     .nav-link {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        border-radius: 0;
+        justify-content: flex-start;
+        border-bottom: 1px solid rgba(55, 65, 81, 0.3);
+    }
+    
+    .nav-link:hover {
+        background-color: var(--surface-color);
+        transform: none;
+    }
+    
+    .nav-dropdown {
+        width: 100%;
+    }
+    
+    .dropdown-toggle {
+        width: 100%;
+        justify-content: space-between;
     }
     
     .dropdown-menu {
-        position: fixed;
-        top: 70px;
-        left: 1rem;
-        right: 1rem;
+        position: static;
+        background: var(--background-color);
+        border: none;
+        border-radius: 0;
         min-width: auto;
-    }
-    
-    .dropdown-item {
-        padding: 1rem 1.5rem;
-        font-size: 1rem;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
     }
     
     .dropdown-menu.show {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
+        max-height: 200px;
+    }
+    
+    .dropdown-item {
+        padding: 1rem 3rem;
+        font-size: 0.95rem;
+        border-bottom: 1px solid rgba(55, 65, 81, 0.2);
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .dropdown-item:hover {
+        background-color: rgba(145, 70, 255, 0.1);
     }
     
     .main-content {
@@ -822,6 +912,34 @@ html {
 .gallery-info p {
     font-size: 0.9rem;
     opacity: 0.9;
+}
+
+/* Additional mobile styles for better UX */
+@media (max-width: 768px) {
+    /* Prevent horizontal scroll when menu is open */
+    body.menu-open {
+        overflow-x: hidden;
+    }
+    
+    /* Improve touch targets for mobile */
+    .nav-link,
+    .dropdown-item {
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+    }
+    
+    /* Better spacing for mobile navigation */
+    .nav-brand a {
+        font-size: 1.3rem;
+    }
+    
+    /* Ensure hamburger is easily tappable */
+    .mobile-menu-toggle {
+        min-width: 44px;
+        min-height: 44px;
+        padding: 7px;
+    }
 }
 
 /* Responsive para páginas de sección */
