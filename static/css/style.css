@@ -602,7 +602,7 @@ body {
         border-top: 1px solid var(--border-color);
         flex-direction: column;
         gap: 0;
-        padding: 0;
+        padding: 1rem 0;
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
@@ -610,32 +610,20 @@ body {
         z-index: 999;
         max-height: calc(100vh - 70px);
         overflow-y: auto;
-        height: 0;
     }
     
     .nav-menu.active {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
-        height: auto;
-        padding: 1rem 0;
     }
     
     .nav-link {
         padding: 1rem 2rem;
         font-size: 1rem;
         border-radius: 0;
-        justify-content: center;
-        position: relative;
+        justify-content: flex-start;
         border-bottom: 1px solid rgba(55, 65, 81, 0.3);
-        text-align: center;
-    }
-    
-    .nav-link .nav-icon {
-        position: absolute;
-        left: 2rem;
-        top: 50%;
-        transform: translateY(-50%);
     }
     
     .nav-link:hover {
@@ -649,15 +637,7 @@ body {
     
     .dropdown-toggle {
         width: 100%;
-        justify-content: center;
-        position: relative;
-    }
-    
-    .dropdown-toggle .dropdown-arrow {
-        position: absolute;
-        right: 2rem;
-        top: 50%;
-        transform: translateY(-50%);
+        justify-content: space-between;
     }
     
     .dropdown-menu {
@@ -666,19 +646,17 @@ body {
         border: none;
         border-radius: 0;
         min-width: auto;
-        opacity: 0;
-        visibility: hidden;
+        opacity: 1;
+        visibility: visible;
         transform: none;
         box-shadow: none;
         max-height: 0;
         overflow: hidden;
-        transition: all 0.3s ease;
+        transition: max-height 0.3s ease;
     }
     
     .dropdown-menu.show {
         max-height: 200px;
-        opacity: 1;
-        visibility: visible;
     }
     
     .dropdown-item {
@@ -687,16 +665,6 @@ body {
         border-bottom: 1px solid rgba(55, 65, 81, 0.2);
         margin: 0;
         border-radius: 0;
-        justify-content: center;
-        position: relative;
-        text-align: center;
-    }
-    
-    .dropdown-item .nav-icon {
-        position: absolute;
-        left: 3rem;
-        top: 50%;
-        transform: translateY(-50%);
     }
     
     .dropdown-item:hover {
